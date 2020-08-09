@@ -9,7 +9,7 @@ class AuthenticationController < ApplicationController
     if token
       render json: { auth_token: token }
     else
-      render json: { error: 'unauthorized' }, status: :unauthorized
+      render json: { error: 'Problem generating token, try again!' }
     end
 
   end

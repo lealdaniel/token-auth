@@ -42,8 +42,8 @@ class ItemController < ApplicationController
 
   private
 
-    def item_params
-      params.permit(:description)
-    end
+  def item_params
+    params.permit(:description)
+  end
 
 end
