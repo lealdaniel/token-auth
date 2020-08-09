@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
-  resources :items
+  
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
   get '/login', to: redirect('/auth/google_oauth2')
   get '/auth/google_oauth2/callback', to: 'authentication#authenticate'
   # get '/auth/failure', to: redirect(‘/’)
 
-
+  resources :item, only: [:index, :create, :update, :destroy]
   # should work like this =>
   # 1 - User wants to login with Google
   # 2 - He authenticates his account with Google and Google send us some infos
