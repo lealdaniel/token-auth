@@ -92,7 +92,7 @@ GEM
     multi_json (1.15.0)
     multi_xml (0.6.0)
     multipart-post (2.1.1)
-    nio4r (2.5.2)
+    nio4r (2.5.8)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
     oauth2 (1.4.4)
@@ -111,7 +111,7 @@ GEM
     omniauth-oauth2 (1.6.0)
       oauth2 (~> 1.1)
       omniauth (~> 1.9)
-    puma (4.3.5)
+    puma (4.3.12)
       nio4r (~> 2.0)
     rack (2.2.3)
     rack-test (1.1.0)
@@ -178,7 +178,7 @@ DEPENDENCIES
   jwt
   listen (~> 3.2)
   omniauth-google-oauth2
-  puma (~> 4.1)
+  puma (~> 4.3)
   rails (~> 6.0.3, >= 6.0.3.2)
   simple_command
   spring
